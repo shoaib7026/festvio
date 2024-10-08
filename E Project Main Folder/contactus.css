@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat";
+
+}
+
+
+/* navbar start from here  */
+.navbar .container-fluid .navbar-nav {
+    margin-left: 80px;
+
+}
+.navbar .container-fluid .navbar-nav .nav-item{
+    margin-left: 25px;
+}
+
+    
+.navbar .container-fluid .navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 18px;
+    transition:ease 0.2s;
+}
+.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover{
+    transform: scale(0.9);
+}
+/* dropdown start from here  */
+
+.navbar .container-fluid .navbar-nav .nav-item .dropdown-menu {
+    background-color:  #043531;
+   margin: 0px;
+   padding: 20px 0px;
+   
+
+}
+.navbar .container-fluid .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+    color: white;
+    padding: 15px 15px;
+    font-size: 13px;
+    margin-top: 5px;
+    transition: 0.1s;
+
+}
+.navbar .container-fluid .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
+    color: black;
+    background-color: white;
+}
+/* dropdown End here  */
+
+.searchboxmain{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inputtext{
+    width: 0;
+    height: 0;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s linear;
+
+
+}
+
+.icon{
+    text-decoration: none;
+    font-size: 28px;
+    border-radius: 50px;
+    position: absolute;
+    right: 15px;
+    font-weight: bold;
+    color: #c4aa66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchboxmain:hover .inputtext{
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.searchboxmain:hover .icon{
+    color: #c4aa66;
+    right: 5px;
+} 
+
+
+/* navbar end here  */
+
+
+/* baner strat from here  */
+
+.bg-video{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin: 0; 
+    padding: 0;
+}
+/* baner end here  */
+
+/* section 3 basant start from here  */
+.basant{
+    border-radius: 10px;
+    
+}
+/* section 3 basant end here  */
+
+
+/* readmore button css start from here  */
+.readmore-btn {
+padding: 8px 12px;
+border: none;
+position: relative;
+background-color: #043531;
+
+}
+.readmore-btn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.readmore-btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.readmore-btn:hover::after{
+    width: 100%;
+}
+.readmore-btn::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.readmore-btn:hover::before{
+    width: 100%;
+   
+}
+.readmore-btn:hover{
+    background-color: white;
+}
+.readmore-btn:hover a{
+    color: black;
+}
+
+
+/* readmore button css end here  */
+
+/* This Media Queries is for images when screen size is 768 then image will take margin bottom all images of festival  */
+@media screen and (min-width:678px){
+    .section3 .container-fluid .row .content {
+       margin-top: 20px;
+    }
+    .section3 .container-fluid .row .img{
+        margin-top: 10px;
+    }
+
+
+
+}
+/* images media queries closs here  */
+
+/* this media queries is for font size of content  */
+@media screen and (max-width:1150px) and (min-width:768px) {
+    .content,p{
+        font-size:13px !important ;
+    }
+}
+/* font media queries close here  */
+
+.container-fluid .row .img:hover{
+transform: scale(1.1);
+}
+
+
+/* books download btn btn start from here */
+ .book-dawonlaod-btn{
+    padding: 5px 12px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #c4aa66;
+    background-color: white;
+    top: 18px;
+ }
+ .book-dawonlaod-btn:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #c4aa66;
+    transition: 0.3s  ease;
+    z-index: -1;
+ }
+ .book-dawonlaod-btn a{
+    text-decoration: none;
+    color: black;
+ }
+ .book-dawonlaod-btn:hover:after{
+    width: 100%;
+ }
+
+
+/* books download btn  end here */
+
+
+
+/* books card hover effect start from here  */
+
+.bookssection .container-fluid .row .card{
+    transition: 0.2s;
+}
+
+.bookssection .container-fluid .row .card:hover{
+    -webkit-box-shadow: 1px 0px 15px 5px #000000; 
+box-shadow: 1px 0px 15px 5px #000000;
+}
+
+
+/* books card hover effect end here  */
+
+
+
+/* footer start from here  */
+
+.footer .container-fluid .row{
+    padding: 40px 10px;
+}
+
+.footer .container-fluid .row .quick-links ul li{
+    list-style-type: none;
+
+    margin-top: 10px;
+    
+    
+}
+
+
+.footer .container-fluid .row .quick-links ul li a{
+    text-decoration: none;
+    color: rgb(192, 188, 188);
+    transition: 0.4s;
+margin-left: -26px;
+}
+.footer .container-fluid .row .quick-links ul li a:hover{
+    text-decoration: underline;
+    color:#c4aa66;
+}
+.footer .container-fluid .row .cntent i{
+    color: #c4aa66;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid #c4aa66;
+    margin-left: 5px;
+    transition: 0.4s;
+}
+.footer .container-fluid .row .cntent i:hover{
+    background-color: #c4aa66;
+    color:#043531;
+}
+
+/* conatctsus start from here  */
+.container-fluid .row .info .icons i{
+font-size: 22px;
+margin-right: 8px;
+}
+.container-fluid .row .info .icons{
+    margin-top: 20px;
+}
+.container-fluid .row .info{
+    border-radius: 8px;
+}
+
+
+.container-fluid .row .contact input{
+    width: 100%;
+    height: 45px;
+     border: none;
+     border-bottom: 2px solid #043531;
+     outline: none;
+}
+.container-fluid .row .contact .submit{
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid #043531;
+    transition: 0.4s;
+}
+.container-fluid .row .contact .submit:hover{
+    background-color: #175751;
+    color: white;
+}
+
+
+
+
+/* conatctsus end here  */
+
